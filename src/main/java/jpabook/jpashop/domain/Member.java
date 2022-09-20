@@ -22,6 +22,6 @@ public class Member {
     private Address address;
 
     @OneToMany(mappedBy = "member") // 일대다 관계
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>(); // 컬렉션은 필드에서 초기화 하는 것이 안전함
 
 }
